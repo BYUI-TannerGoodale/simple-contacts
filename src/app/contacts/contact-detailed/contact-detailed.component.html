@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="row">
+          <a routerLink="edit" class="btn btn-primary">Edit</a>
+          <button class="btn btn-danger" type="button" (click)="onDelete()">Delete</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <p><strong>Name: </strong>{{ contact.firstName }} {{ contact.lastName }}</p>
+      <p><strong>Email: </strong>{{ contact.email }}</p>
+      <p><strong>Phone: </strong>{{ contact.phoneNumber }}</p>
+    </div>
+  </div>

@@ -1,0 +1,28 @@
+<div class="panel panel-default col-xs-12">
+  <div class="row">
+    <div class="col-xs-12" style="padding: 0;">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-sm-8">
+              <h3>Select a contact below or make a new one!</h3>
+            </div>
+            <div class="col-sm-4" style="margin-top: 11px;">
+              <a class="btn btn-success" [routerLink]="['new']">New Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-12">
+        <app-contact-item
+          *ngFor="let contactElement of contacts"
+          [contact]="contactElement">
+        </app-contact-item>
+      </div>
+    </div>
+  </div>
+</div>

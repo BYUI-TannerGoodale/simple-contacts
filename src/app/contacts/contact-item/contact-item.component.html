@@ -1,0 +1,7 @@
+<a [routerLink]="[contact.id]" class="list-group-item clearfix" style="display: flex; flex-direction: column;">
+  <div class="pull-left">
+    <h4 class="list-group item-heading">{{ contact?.firstName }} {{ contact?.lastName }}</h4>
+  </div>
+  <div>{{ contact?.phoneNumber }}</div>
+  <div>{{ contact?.email }}</div>
+</a>
